@@ -1,0 +1,273 @@
+/* CSS Reset below */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* CSS Reset Above*/
+/* written by Leo Effert below */
+
+/* ------------------------------------------------  */
+
+body {
+  background-color: cadetblue;
+}
+
+/* Menu Below*/
+
+nav {
+  display: flex;
+  background-color: aqua;
+  font-size: 40px;
+  border: 2px solid grey;
+}
+nav ul {
+  width: 100%;
+}
+nav li {
+  padding: 10px 0 10px 0;
+  border: 2px solid grey;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.menuOption2 {
+  background-color: aquamarine;
+}
+
+/* Menu Above*/
+/* Leo Page Below*/
+
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+#catImage {
+  height: 40vh;
+  width: 100vw;
+}
+
+.textDiv {
+  padding: 20px;
+  background-color: white;
+  border: 2px solid black;
+  font-size: 20px;
+}
+
+.awardsDiv h3 {
+  font-size: 20px;
+}
+
+.awardsDiv {
+  background-color: cornsilk;
+  border: 2px solid black;
+  border-top: 0;
+  text-align: center;
+}
+.programmingDiv {
+  background-color: pink;
+  border: 2px solid black;
+  border-top: 0;
+  text-align: center;
+}
+.listDiv {
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+}
+
+/* Leo Page Above*/
+/* Contact Page Below*/
+
+.formDiv {
+  background-color: cornflowerblue;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  width: 60vw;
+  margin-left: 20vw;
+  border: 2px solid black;
+}
+.formItem {
+  margin: 5px;
+}
+
+input {
+  border: black solid 2px;
+}
+
+input:valid {
+  border-color: green;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+#submitButton {
+  border-color: black;
+}
+
+/* Contact Page Above */
+/* Animation Below */
+
+.animationDiv {
+  position: absolute;
+  width: 80vw;
+  height: 50vh;
+  left: 10vw;
+  margin-top: 5vh;
+}
+
+.animationTop {
+  position: absolute;
+  background-color: red;
+  width: 10vw;
+  height: 10vh;
+  top: 0;
+  transition: 500ms ease-in-out;
+  animation: top-to-center 3s infinite alternate;
+}
+
+.animationBottom {
+  position: absolute;
+  background-color: green;
+  width: 10vw;
+  height: 10vh;
+  bottom: 0;
+  transition: 500ms ease-in-out;
+  animation: bottom-to-center 3s infinite alternate;
+}
+
+.animationRight {
+  position: absolute;
+  background-color: yellow;
+  width: 12vw;
+  height: 7vh;
+  bottom: 0;
+  right: 0;
+  transition: 500ms ease-in-out;
+  animation: right-to-center 3s infinite alternate;
+}
+
+@keyframes top-to-center {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(25vw, 0);
+  }
+  100% {
+    transform: translate(25vw, 15vh);
+    background-color: blue;
+  }
+}
+@keyframes bottom-to-center {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -15vh);
+  }
+  100% {
+    transform: translate(25vw, -15vh);
+    background-color: blue;
+  }
+}
+@keyframes right-to-center {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -43vh);
+  }
+  100% {
+    transform: translate(-33vw, -15vh);
+    background-color: blue;
+  }
+}
+
+/* Animation Above */
+
+/* Small Screen Above */
+/* ---------------------------------------------------- */
+/* Big Screen Below   */
+
+@media (min-width: 950px) {
+  /* Menu below */
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .menuOption2 {
+    background-color: aqua;
+  }
+  nav li {
+    border: none;
+  }
+
+  /* Menu Above */
+  /* Leo Page Below */
+
+  #catImage {
+    width: 40vw;
+  }
+
+  .textDiv {
+    width: 55vw;
+    border: none;
+  }
+
+  .mainDiv {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5vh 0;
+  }
+
+  .listDiv {
+    flex-direction: row;
+  }
+
+  .awardsDiv {
+    width: 50vw;
+    border: none;
+    height: 30vh;
+  }
+  .programmingDiv {
+    width: 45vw;
+    height: 30vh;
+    border: none;
+  }
+}

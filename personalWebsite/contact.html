@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li class="menuOption1"><a href="/index.html">Home</a></li>
+      <li class="menuOption2"><a href="/contact.html">Contact</a></li>
+      <li class="menuOption3"><a href="/leo.html">About Leo Effert</a></li>
+    </ul>    
+  </nav>
+  <div class="formDiv">
+    <form action="/action" id="contactForm">
+      <h2>Get in contact with Leo:</h2>
+
+      <input type="text" placeholder="First Name" class="formItem" required><br>
+      <input type="text" placeholder="Last Name" class="formItem" required><br>
+
+      <input type="text" placeholder="Phone Number" class="formItem" required><br>
+      <input type="email" placeholder="Email" class="formItem" required><br>
+
+      <textarea placeholder="Additional info..." class="formItem"></textarea><br>
+
+      <input type="checkbox" id="checkBox1" name="checkBox1" value="notRobot" class="formItem">
+      <label for="checkBox1"> I'm not a robot</label><br>
+      <input type="checkbox" id="checkBox2" name="checkBox2" value="isHuman" class="formItem">
+      <label for="checkBox2"> I'm human</label><br>
+      <input type="checkbox" id="checkBox3" name="checkBox3" value="robotDiet" class="formItem">
+      <label for="checkBox3"> My favorite food is electricity</label><br>
+
+      <input type="submit" value="Submit" class="formItem" id="submitButton">
+    </form>
+    
+  </div> 
+</body>
+</html>
